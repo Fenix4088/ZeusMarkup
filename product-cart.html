@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>SeaZeus</title>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="search-box">
+      <div class="logo">
+        <img src="images/logo.png" alt="logo">
+      </div>
+      <div class="searchbar">
+        <span class="searchbar__title">Product</span>
+        <input class="searchbar__input" type="search">
+        <input class="searchbar__button" type="button" value="Search">
+      </div>
+
+      <div class="login">
+        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="shopping-cart" role="img"
+             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+             class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x">
+          <path fill="currentColor"
+                d="M551.991 64H144.28l-8.726-44.608C133.35 8.128 123.478 0 112 0H12C5.373 0 0 5.373 0 12v24c0 6.627 5.373 12 12 12h80.24l69.594 355.701C150.796 415.201 144 430.802 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-18.136-7.556-34.496-19.676-46.142l1.035-4.757c3.254-14.96-8.142-29.101-23.452-29.101H203.76l-9.39-48h312.405c11.29 0 21.054-7.869 23.452-18.902l45.216-208C578.695 78.139 567.299 64 551.991 64zM208 472c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm256 0c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm23.438-200H184.98l-31.31-160h368.548l-34.78 160z"
+                class=""></path>
+        </svg>
+        <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="user" role="img"
+             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-user fa-w-14 fa-3x">
+          <path fill="currentColor"
+                d="M313.6 288c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4zM416 464c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16v-41.6C32 365.9 77.9 320 134.4 320c19.6 0 39.1 16 89.6 16 50.4 0 70-16 89.6-16 56.5 0 102.4 45.9 102.4 102.4V464zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm0-224c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
+                class=""></path>
+        </svg>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="categories">
+        <div class="categories__icon">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.5 9.16667C0.5 8.68802 0.88802 8.3 1.36667 8.3H4.83333C5.31198 8.3 5.7 8.68802 5.7 9.16667V12.6333C5.7 13.112 5.31198 13.5 4.83333 13.5H1.36667C0.88802 13.5 0.5 13.112 0.5 12.6333V9.16667Z" fill="#B6C2D1"/>
+            <path d="M0.5 1.36667C0.5 0.88802 0.88802 0.5 1.36667 0.5H4.83333C5.31198 0.5 5.7 0.88802 5.7 1.36667V4.83333C5.7 5.31198 5.31198 5.7 4.83333 5.7H1.36667C0.88802 5.7 0.5 5.31198 0.5 4.83333V1.36667Z" fill="#B6C2D1"/>
+            <path d="M8.3 9.16667C8.3 8.68802 8.68802 8.3 9.16667 8.3H12.6333C13.112 8.3 13.5 8.68802 13.5 9.16667V12.6333C13.5 13.112 13.112 13.5 12.6333 13.5H9.16667C8.68802 13.5 8.3 13.112 8.3 12.6333V9.16667Z" fill="#B6C2D1"/>
+            <path d="M8.3 1.36667C8.3 0.88802 8.68802 0.5 9.16667 0.5H12.6333C13.112 0.5 13.5 0.88802 13.5 1.36667V4.83333C13.5 5.31198 13.112 5.7 12.6333 5.7H9.16667C8.68802 5.7 8.3 5.31198 8.3 4.83333V1.36667Z" fill="#B6C2D1"/>
+          </svg>
+        </div>
+        <span>Category</span>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-list__item">How it works</li>
+        <li class="nav-list__item">Marketplace</li>
+        <li class="nav-list__item">News</li>
+        <li class="nav-list__item">Pricing</li>
+        <li class="nav-list__item">About</li>
+        <li class="nav-list__item">Contact us</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-cart">
+    <div class="product-info-wrap">
+      <div class="slider">
+        <div class="product-big-image">
+          <img src="images/scooter-slider.png" alt="main product image">
+        </div>
+        <div class="product-small-images">
+          <div class="prev-btn">
+            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.2998 4L1.60734 7.69246C1.27202 8.02779 0.728351 8.02779 0.393027 7.69246C0.0577032 7.35714 0.0577032 6.81347 0.393027 6.47815L2.87117 4L0.393027 1.52185C0.0577034 1.18653 0.0577035 0.642862 0.393027 0.307538C0.728351 -0.027786 1.27202 -0.0277861 1.60734 0.307538L5.2998 4Z" fill="#9EA9B9"/>
+            </svg>
+          </div>
+          <div class="images-container">
+            <div class="small-img">
+              <img src="images/scooter-slider.png" alt="main product image">
+            </div>
+            <div class="small-img">
+              <img src="images/scooter-slider.png" alt="main product image">
+            </div>
+            <div class="small-img">
+              <img src="images/scooter-slider.png" alt="main product image">
+            </div>
+            <div class="small-img">
+              <img src="images/scooter-slider.png" alt="main product image">
+            </div>
+            <div class="small-img">
+              <img src="images/scooter-slider.png" alt="main product image">
+            </div>
+            <div class="small-img">
+              <img src="images/scooter-slider.png" alt="main product image">
+            </div>
+            <div class="small-img">
+              <img src="images/scooter-slider.png" alt="main product image">
+            </div>
+          </div>
+          <div class="next-btn">
+            <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.2998 4L1.60734 7.69246C1.27202 8.02779 0.728351 8.02779 0.393027 7.69246C0.0577032 7.35714 0.0577032 6.81347 0.393027 6.47815L2.87117 4L0.393027 1.52185C0.0577034 1.18653 0.0577035 0.642862 0.393027 0.307538C0.728351 -0.027786 1.27202 -0.0277861 1.60734 0.307538L5.2998 4Z" fill="#9EA9B9"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-title-wrap">
+          <h2 class="product-heading">Scooter KUGOO G1</h2>
+          <div class="product-article-wrap">
+            <span class="product-article">Article:</span>
+            <span class="product-article-id">194758623</span>
+          </div>
+        </div>
+        <div class="product-basic-info">
+          <h4 class="basic-info-title">Product information</h4>
+          <ul class="basic-info-list">
+            <li class="basic-info-list-item"><span>Category:</span><span>Automobiles & Motorcycles</span></li>
+            <li class="basic-info-list-item"><span>Seller:</span><span>Shop_Name</span></li>
+            <li class="basic-info-list-item"><span>Price:</span><span>1100 EUR</span></li>
+          </ul>
+        </div>
+        <input type="button" value="Add to cart" class="add-product-btn">
+        <div class="product-basic-info">
+          <h4 class="basic-info-title">Offer information</h4>
+          <ul class="basic-info-list">
+            <li class="basic-info-list-item"><span>Amount:</span><span>194758623</span></li>
+            <li class="basic-info-list-item"><span>Weight</span></li>
+            <li class="basic-info-list-item"><span class="weight-unit">net:</span><span>1000 kg</span></li>
+            <li class="basic-info-list-item"><span class="weight-unit">gross:</span><span>800 kg</span></li>
+          </ul>
+        </div>
+        <div class="show-more-wrap">
+          <button class="show-more-btn" type="button" value="show more">
+            <span>show more</span>
+            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.01514 5.59961L0.309666 1.9202C-0.0268392 1.58606 -0.0287578 1.0424 0.305381 0.705894C0.639519 0.369389 1.18318 0.36747 1.51969 0.701609L4.00657 3.17099L6.47595 0.684117C6.81009 0.347611 7.35375 0.345693 7.69026 0.679831C8.02676 1.01397 8.02868 1.55763 7.69454 1.89414L4.01514 5.59961Z" fill="#4153DF"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-description-wrap">
+      <div class="tabs">
+        <div class="tab active">Description</div>
+        <div class="tab">Attributes</div>
+        <div class="underline"></div>
+      </div>
+      <p class="description-text">
+        This single electric scooter able to transform your ideas about small-sized urban electric transport!
+        Depending on to its technical qualities it will not yield to another electric scooter. Yes, and it starts up
+        with a key, like a real car, the only one among the KUGOO models today. It is larger in size and looks very
+        reliable and durable.
+      </p>
+    </div>
+  </main>
+
+</div>
+<footer class="footer">
+  <div class="footer__content container">
+    <ul class="footer-list">
+      <li class="footer-list__item about"><a href="">About US</a></li>
+      <li class="footer-list__item"><a href="">Terms of Service</a></li>
+      <li class="footer-list__item"><a href="">Copyright</a></li>
+      <li class="footer-list__item"><a href="">Support</a></li>
+      <li class="footer-list__item"><a href="">Help</a></li>
+    </ul>
+    <div class="contacts">
+      <div class="social-networks">
+        <a href="">
+          <img src="images/youtube-icon.png" alt="youtube icon">
+        </a>
+        <a href="">
+          <img src="images/instagram-icon.png" alt="instagram icon">
+        </a>
+        <a href="">
+          <img src="images/twitter-icon.png" alt="twitter icon">
+        </a>
+        <a href="">
+          <img src="images/facebook-icon.png" alt="facebook icon">
+        </a>
+        <a href="">
+          <img src="images/linkedin-icon.png" alt="linkedin icon">
+        </a>
+      </div>
+      <div class="rights">
+        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.0592 0.940674H2.94066C1.82518 0.940674 0.920898 1.84496 0.920898 2.96044V11.0395C0.920898 12.155 1.82518 13.0593 2.94066 13.0593H15.0592C16.1748 13.0593 17.079 12.155 17.079 11.0395V2.96044C17.079 1.84496 16.1748 0.940674 15.0592 0.940674ZM2.94066 2.4555H15.0592C15.3377 2.4555 15.5642 2.68203 15.5642 2.96044V3.65984L10.3018 8.04585C9.56997 8.65434 8.42893 8.65383 7.69913 8.04633L2.43572 3.65984V2.96044C2.43572 2.68203 2.66225 2.4555 2.94066 2.4555ZM15.0592 11.5444H2.94066C2.66225 11.5444 2.43572 11.3179 2.43572 11.0395V5.63227L6.72967 9.21056C7.36678 9.74015 8.17251 10.0321 8.99995 10.0321C9.82739 10.0321 10.6331 9.74015 11.2712 9.21006L15.5642 5.63233V11.0395C15.5642 11.3179 15.3377 11.5444 15.0592 11.5444Z" fill="#B6C2D1"/>
+        </svg>
+        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.5 12H4.5C4.22388 12 4 12.2238 4 12.5C4 12.7761 4.22388 13 4.5 13H7.5C7.77619 13 8 12.7761 8 12.5C8 12.2238 7.77619 12 7.5 12ZM9 0H3C1.61931 0 0.5 1.11925 0.5 2.5V13.5C0.5 14.8807 1.61931 16 3 16H9C10.3807 16 11.5 14.8807 11.5 13.5V2.5C11.5 1.11925 10.3807 0 9 0ZM9.5 13.5C9.5 13.7757 9.27569 14 9 14H3C2.72431 14 2.5 13.7757 2.5 13.5V2.5C2.5 2.22431 2.72431 2 3 2H4V2.5C4 2.77612 4.22388 3 4.5 3H7.5C7.77619 3 8 2.77612 8 2.5V2H9C9.27569 2 9.5 2.22431 9.5 2.5V13.5Z" fill="#B6C2D1"/>
+        </svg>
+        <p class="rights-text">© SeaZeus. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
